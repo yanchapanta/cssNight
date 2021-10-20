@@ -1,0 +1,72 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+fieldset{
+   padding: 1rem 1rem;
+   position: relative;
+
+}
+fieldset::before{
+    /* margin: 0;
+    padding: 0; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 1.2rem;
+    border-style: solid;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+
+}
+legend{
+    background-color: white;
+    width: 20%;
+    padding: 0 .5rem;
+    position: absolute;   
+    border: 2px groove #ccc;
+    border-radius: 5px;
+    top: -10%;
+    right: 0;
+    left: 0;
+    margin:0 auto;
+
+
+}
+.row{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    
+}
+.row label{
+    display: block;
+    margin-right: 1rem;
+}
+.row input{
+    flex-grow: 1;
+}
+input{
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: .5rem;
+}
+input[type="text"]{
+
+}
+input[type="submit"]{
+    padding: 1rem 0;
+}

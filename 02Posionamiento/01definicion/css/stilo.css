@@ -1,0 +1,51 @@
+.caja-padre{
+    width: 70%;
+    background-color: rgb(240, 26, 26);
+    color:whitesmoke;
+    margin: auto;
+    height: auto;
+    position: relative;
+}
+.caja{
+    border:2px solid whitesmoke;
+    padding: 1rem;
+    width: 200px;
+}
+/* static es por defecto
+ */
+.caja1{
+    background-color: rgb(230, 148, 148);
+}
+.caja2{
+    background-color: rgb(81, 211, 120);
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+}
+.caja3{
+    background-color: rgb(55, 0, 255);
+}
+.caja4{
+    background-color: rgb(224, 115, 166);
+}
+.caja5{
+    background-color: rgb(235, 32, 66);
+}
+.caja6{
+    background-color: rgb(68, 214, 23);
+}
+.caja7{
+    background-color: rgb(7, 211, 133);
+}
+.caja8{
+    background-color: rgb(54, 19, 19);
+    position: absolute;
+    left: 1rem;
+}
+.caja9{
+    background-color: rgb(231, 218, 33);
+}
+.caja10{
+    background-color: red;
+   
+}

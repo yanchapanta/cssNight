@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    background-color: green;
+}
+.cajas{
+    display: flex;
+}
+.envoltura{
+    border: 1px solid black;
+    width: 250px;
+
+}
+.caja1{
+    border: 1px solid black;
+    width: 200px;
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-top: 1rem;
+    opacity: .7;
+}
+.estatico{
+    position: static;
+    background-color: green;
+    /* top,right,bottom,top  no funcion en el statico */
+}
+/* POSICION RELATIVO */
+.relativo{
+    position: relative;
+    background-color: green;
+    top: 1.5rem;
+    left: 1rem;
+    z-index: 30;
+}
+.opcion02{
+    position: relative;
+    z-index: 20;
+}
+/* POSICION ABSOLUTO */
+.caja3{
+    position: relative;
+    border: 1px solid rgb(48, 221, 17);
+    width: 200px;
+    height: 400px;
+}
+.absoluto{
+    position: absolute;
+    background-color: red;
+    /* margin-left: 1rem; */
+    /* top: 0rem;
+    left: 4rem; */
+    bottom: 1rem;
+    right: 0;
+}
+.contendorStick{
+    position: relative;
+}
+.stiker{
+    position: sticky;
+    background-color: green;
+    bottom: 0rem;
+}
+.pegagoso{
+    position: fixed;
+    background-color: rgb(253, 238, 21);   
+    top: 0;
+    right: 2rem;
+}
+.demostracion{
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    border: 2px solid red;
+}

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: rgb(241, 109, 142);
+}
+.menu{
+    display: flex;
+    width: 90%;
+    /* background-color: red; */
+    margin: auto;
+}
+.menu > li{
+    list-style-type: none;    
+}
+.menu > li > a{
+    display:block;  
+    padding: 1rem 1rem 1rem 0rem; 
+    /* background-color:red;
+    margin: 1px; */
+}

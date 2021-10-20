@@ -1,0 +1,23 @@
+ol {
+    font-size: 15pt;
+    counter-reset: base base1 45 base2 22;
+    list-style-type: none;
+  }
+  
+  .base0:before {
+    counter-increment: base;
+    content: counters(base, ".") " ";
+  }
+  
+  .base4:before {
+    counter-increment: base1;
+    content: counters(base1, ".") " ";
+  }
+  .base2{
+    list-style-type:none;
+  }
+  .base2:before {
+    counter-increment: base2;
+    content: counters(base2, "") " ";
+  }
+  

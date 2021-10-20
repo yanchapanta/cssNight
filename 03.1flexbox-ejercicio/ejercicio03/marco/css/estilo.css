@@ -1,0 +1,75 @@
+:root{
+    --bgNegro:#000000;
+    --bgNaranja:rgb(253, 158, 4);
+    --bgNaranja_frontal:rgb(228, 36, 19);
+    --bgN_fondo:rgb(240, 99, 17);
+    --bgBlanco:#fff;
+}
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GENERAL */
+nav{
+    background-color:var(--bgNegro);
+
+}
+li{
+    list-style: none;
+   
+}
+a{
+    text-decoration: none;
+}
+
+/* MENU */
+.menu{
+    display: flex;
+}
+.menu li a{
+    position: relative;
+    display: block;
+    padding: 1rem 3rem;
+    color: var(--bgBlanco);
+}
+.menu li a:hover{
+    background-color: var(--bgNaranja);
+    color: var(--bgNegro);
+    
+}
+.submenu{
+    position: relative;
+    background-color: var(--bgNaranja);
+    display: flex;
+    flex-direction: column;
+}
+.menu li .submenu{
+    display: none;
+
+}
+.widgets{
+    position: relative;
+}
+.menu .widgets:hover .submenu{
+    display: block;
+    position: absolute;
+}
+.submenu li a:hover{
+    background-color: var(--bgN_fondo);
+}
+.submenu::after{    
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    /* background-color: url(../img/hand.png); */
+    background-color: rgba(255, 0, 0, 0.671);
+    background-image :url(../img/hand.png);
+    background-size: cover;
+    background-position: center center;    
+    top: 0;
+    left: -100%;
+}
+
+

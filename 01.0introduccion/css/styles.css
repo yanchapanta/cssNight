@@ -1,0 +1,14 @@
+*,
+html{
+    background-color: aquamarine;
+}
+#lista{
+    background-color: red;
+}
+.lista{
+    background-color: yellow;
+}
+ul{
+    background-color: black;
+    color: white !important;
+}

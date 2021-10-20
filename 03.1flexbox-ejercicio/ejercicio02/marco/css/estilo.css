@@ -1,0 +1,83 @@
+:root{
+    --bgNegro:#000000;
+    --bgBlanco:#ffffff;
+    --bgRojo:red;
+}
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cabecera{
+    width: 100%;
+}
+.cabecera_titulo{
+    width: 100%;
+    height: 5rem;
+    background-color: #000000;
+    color:#ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    background-color: red;
+    color: black;
+}
+a{
+    color: var(--bgNegro);
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+.menu > li{
+    background-color: red;
+    width: 100%;
+    
+}
+.menu li a{
+    display: flex;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.menu li a:hover{
+    color: var(--bgBlanco);
+    background-color: var(--bgNegro);
+}
+.menu a:hover{
+    display: block;
+
+}
+.submenu{
+    display: none;
+    position: absolute;
+    width: 25%;
+    background-color: var(--bgRojo);
+}
+.submenu li{
+    position: relative;
+}
+.menu > li:hover > .submenu{
+    display: block;
+}
+.subTres{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background-color: var(--bgRojo);
+
+}
+.submenu > li:hover > .subTres{
+    display: block;
+}

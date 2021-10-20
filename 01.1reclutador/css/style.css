@@ -1,0 +1,23 @@
+.titulo{
+    /* background-color: red; */
+    color: #0f0f0f;
+    width: 50%;
+    margin: auto;
+}
+.titulo{
+    padding-left: 3.5rem;
+    position: relative;
+}
+.titulo::before{  
+    position: absolute;
+    width: 70px;
+    height: 70px;    
+    content: " ";
+    background-image: url(../img/whatsapp.jpg);
+    background-size: cover;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+}

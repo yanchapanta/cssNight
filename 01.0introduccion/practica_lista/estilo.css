@@ -1,0 +1,36 @@
+body{
+  background-color: rgb(181 75 75 / 79%);
+}
+
+
+
+ul,ol{
+  list-style: none;
+}
+
+.img1{
+  width: 14px;
+}
+.img2{
+  width: 11px;
+  padding-right: 8px;
+  
+}
+ ul > li {
+   background-color: seagreen;
+ }
+span{
+  color: whitesmoke;
+}
+.azul{
+  color: blue;
+}
+.rojo{
+  color: red;
+}
+
+.borde{
+  border:2px solid whitesmoke;
+  border-radius: 5px;
+}
+

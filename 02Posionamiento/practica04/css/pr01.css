@@ -1,0 +1,53 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 300px;
+    height: 300px;
+    margin:1rem auto;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.caja{
+    width: 120px;
+    height: 120px;
+}
+.negro{
+    background-color: black;
+}
+.celeste{
+    background-color: rgb(131, 223, 223);
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+.amarillo{
+    background-color: rgb(209, 223, 13);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+.verde{
+    background-color: rgb(13, 223, 41);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+.cuadrada{
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}

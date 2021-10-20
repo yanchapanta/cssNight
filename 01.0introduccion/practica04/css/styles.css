@@ -1,0 +1,13 @@
+ul li{
+    list-style-type: lower-alpha;
+}
+.letra > li{
+    list-style-type: none;
+}
+.letra li::before{
+    content: " i )";
+}
+li::before{
+    content: ")";
+    padding-right: .4rem;
+}

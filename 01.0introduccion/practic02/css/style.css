@@ -1,0 +1,33 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    padding: 20px;    
+}
+.lista{
+    width: 50%;
+    margin: auto;
+    background-color: cadetblue;
+}
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.tres{
+    list-style-type: lower-alpha;
+}
+.tres > li::before{
+    content: ") ";
+    /* padding-left: 1rem; */
+}
+ol{
+    padding-left: 1rem;
+    /* list-style-image: url(../image/square.png); */
+    
+}

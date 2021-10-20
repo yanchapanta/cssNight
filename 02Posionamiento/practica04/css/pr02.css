@@ -1,0 +1,38 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+nav{
+    background-color: rgb(238, 94, 118);
+
+}
+ul{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+}
+li{
+    list-style: none;
+}
+a:link{
+    color:black;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    background-color: rgb(51, 81, 180);
+}
+.menu{
+    
+}

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type:none;
+    padding-left: 1rem;
+}
+
+.point{
+    margin-left:2rem;
+}
+.point > li{
+    list-style-type: disc;
+}
+
+
+  /* Sizes:
+  tiny: 1rem
+  small: 2rem
+  medium: 4rem
+  large: 6rem */
