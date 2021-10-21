@@ -6,6 +6,7 @@
 .contenedor{
     width: 45%;
     border: 1px solid green;
+    margin: auto;
 }
 h1{
     padding: .5rem .5rem;
@@ -19,8 +20,44 @@ form{
 fieldset{
     border:1px solid gray;
     border-radius: 10px;
+    padding: 1rem;
 
 }
 legend{
+    
 
+}
+.fila{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+.fila001{
+    width: 50%;
+    
+}
+.fila-hijo{
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0;
+    width: 50%;
+    
+}
+.fila-hijo label{
+flex-grow: 1;
+}
+.fila-hijo input{
+flex-grow: 2
+}
+.fila label{
+    /* padding-right: .5rem; */
+}
+input{
+    width: 29%;
+    margin:0 .5rem;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
