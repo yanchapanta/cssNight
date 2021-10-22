@@ -4,7 +4,7 @@ section {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  font: 14px/21px sans-serif;
+  font: 14px/20px sans-serif;
 }
 .container h2, .container label{
   font-family:Georgia, Times, "Times New Roman", serif;
