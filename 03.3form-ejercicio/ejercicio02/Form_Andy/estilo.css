@@ -1,0 +1,116 @@
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font: 14px/21px sans-serif;
+}
+.container h2, .container label{
+  font-family:Georgia, Times, "Times New Roman", serif;
+}
+.texto, .texto_contact {
+  font-size: 11px;
+}
+.container ul {
+  width:750px;
+  list-style-type:none;
+  list-style-position:outside;
+  margin:0px;
+  padding:0px;
+}
+.container li{
+  padding:12px; 
+  border-bottom:1px solid #eee;
+  position:relative;
+}
+.container li:first-child, .container li:last-child {
+  /* linea */
+  border-bottom:1px solid #777;
+}
+.container h2 {
+  margin:0;
+  display: inline;
+}
+.texto_contact {
+  color:#d45252; 
+  margin:5px 0 0 0; 
+  display:inline;
+  float:right;
+}
+.container label {
+  width:150px;
+  margin-top: 3px;
+  display:inline-block;
+  padding:3px;
+}
+.container input {
+  height:20px; 
+  width:220px; 
+  padding:5px 8px;
+}
+.container textarea {
+  padding:8px; width:300px;
+}
+.container button {
+  margin-left:156px;
+}
+.container input, .container textarea { 
+  border:1px solid #aaa;
+  box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+  border-radius:2px;
+}
+.container input:focus, .container textarea:focus {
+  background: #fff; 
+  border:1px solid #555; 
+  box-shadow: 0 0 3px #aaa; 
+}
+button.submit {
+  background-color: #68b12f;
+  border: 1px solid #509111;
+  border-bottom: 1px solid #5b992b;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  padding: 6px 20px;
+  text-align: center;
+}
+button.submit:hover {
+  opacity:.85;
+  cursor: pointer; 
+}
+button.submit:active {
+  border: 1px solid #20911e;
+  box-shadow: 0 0 10px 5px #356b0b inset; 
+}
+.container input, .container textarea {
+  padding-right:30px;
+}
+/* input:required, textarea:required {
+  background: #fff url(falso.png) no-repeat 98% center;
+} */
+
+.container input:focus:invalid, .container textarea:focus:invalid { 
+  background: #fff url(falso.png) no-repeat 98% center;
+  box-shadow: 0 0 5px #d45252;
+  border-color: #b03535
+}
+.container input:required:valid, .container textarea:required:valid { 
+  background: #fff url(acepto.png) no-repeat 98% center;
+  box-shadow: 0 0 5px #5cd053;
+  border-color: #28921f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
