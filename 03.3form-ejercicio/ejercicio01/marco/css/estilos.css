@@ -16,37 +16,56 @@ h1{
 }
 form{
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.3rem;
 }
 fieldset{
     border:1px solid gray;
     border-radius: 10px;
     padding: 1rem;
+    position: relative;
 
 }
 legend{
-    
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(0, 128, 0, 0.445);
+    border: 1px solid transparent;
+    border-radius:5px;
+    width: 40%;
+    top: -7%;
+    left: 0;
+    right: 0;
+    margin: auto;
 
 }
 .fila{
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 1rem 0;
+    text-align: end;
 }
 .fila001{
     width: 50%;
-    
+
 }
 .fila-hijo{
     display: flex;
     justify-content: space-between;
-    margin: .5rem 0;
-    width: 50%;
-    
+    text-align: center;
+    align-items: center;
+    /* margin: .5rem 0; */
+    /* width: 50%; */
+
 }
 .fila-hijo label{
-flex-grow: 1;
+/* flex-grow: 1; */
 }
 .fila-hijo input{
 flex-grow: 2
@@ -60,4 +79,39 @@ input{
     outline: none;
     border: 1px solid gray;
     border-radius: 5px;
+    padding: .3rem;
+}
+.verde{
+background-color: rgb(47, 189, 47);
+}
+.naranja{
+background-color: rgb(245, 183, 14);
+}
+.amarillo{
+  background-color: rgb(238, 255, 3);
+}
+.grupo,ul{
+    color: red;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+.grupo li{
+    list-style: none;
+}
+.grupo p{
+    display: inline;
+}
+.cuadro{
+
+}
+.campo-texto{
+}
+.campo-texto > input{
+    width: 20%;
+
+}
+.numeros{
+
 }

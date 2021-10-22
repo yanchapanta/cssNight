@@ -11,13 +11,17 @@
     <header>   
 
         <div class="contenedor">
-            <h1>Configuración principal</h1>
+            <h1>Configuración Mineria Principal</h1>
             <form action="#">
-                <fieldset>
-                    <legend>Preferencia principal</legend>
+                <fieldset class="verde">
+                    <legend>Preferencia Principal de Mineria</legend>
                     <div class="fila">
-                        <label for="direccion">Dirección</label>
-                        <input class="fila001" type="text" id="direccion">
+<div class="fila-hijo">
+    
+                            <label for="direccion">Dirección</label>
+                            <input class="fila001" type="text" id="direccion">
+                            
+</div>
                     </div>
             
                    <div class="fila">
@@ -32,7 +36,7 @@
                    </div>
             
                 </fieldset>
-                <fieldset>
+                <fieldset class="naranja">
                     <legend>Reserva mineria N°1</legend>
                     <div class="fila">
                         <label for="direccion">Dirección</label>
@@ -51,7 +55,7 @@
                     </div>
             
                 </fieldset>
-                <fieldset>
+                <fieldset class="amarillo">
                     <legend>Reserva mineria N°2</legend>
                     <div class="fila">
                         <label for="direccion">Dirección</label>
@@ -70,6 +74,44 @@
                    </div>
             
                 </fieldset>
+                <ul class="grupo">
+                    <li class="cuadro">
+                        <label for="miembros">
+                            <span>★</span>
+                            <p>
+                                IP para miembros
+
+                            </p>
+                        </label>
+                        <input type="checkbox" id="miembros">
+                        <ul>
+                            <li class="campo-texto">
+                                <label for="puntos">
+                                    <p>
+                                        IP punto de reemplazo
+                                    </p>
+                                </label>
+                                <input type="text" id="puntos">
+                                
+                             </li>
+                            <li class="numero">
+                                <label for="puntos">
+                                    <p>
+                                        Vario bits despues de usr IP
+                                    </p>
+                                </label>
+                                <select id="numeros">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                
+                             </li>
+                        </ul>
+                        
+                     </li>
+                    
+                </ul>
             </form>
         </div>
     </header>
