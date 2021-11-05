@@ -1,0 +1,9 @@
+$bg-primario:red;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    $fuente:"Arial";
+    color: $bg-primario;
+    font-family: $fuente;
+}
