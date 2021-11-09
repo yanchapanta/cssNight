@@ -1,0 +1,258 @@
+/* general */
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,8,65,1) 100%, rgba(0,212,255,1) 100%);
+}
+ul{
+  list-style: none;
+}
+.img img{
+  width: 15%;
+  height: auto;
+}
+.oferta .oferta-flex img{
+  border: 1px solid darkmagenta;
+  width: 13%;
+  height: auto;
+}
+strong,strong a,.color1{
+  color:darkorange
+}
+
+
+/* container */
+.container{
+  max-height: 100vh;
+  max-width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 3fr  1fr;
+  grid-template-areas: 
+  "nav nav"
+  "section aside"
+  "footer login";
+}
+
+
+/* nav */
+.nav{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,8,65,1) 100%, rgba(0,212,255,1) 100%);
+  grid-area: nav;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 1fr;
+  grid-template-areas: 
+  "img"
+  "menu";
+}
+.nav-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: img;
+}
+.menu{
+  grid-area: menu1;
+}
+.menu ul li{
+  border: 1px solid white;
+  padding: 10px 14px;
+}
+ul{
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  grid-gap: .9px;
+  color: aliceblue;
+  text-align: center;
+}
+
+
+/* section */
+.section{
+  background-color: black;
+  grid-area: section;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 1fr;
+  grid-template-areas: 
+  "img-cara"
+  "text";
+}
+.container-section{
+  width: 95%;
+  margin: 16px auto;
+}
+.img-cara{
+  grid-area: img-cara;
+}
+.img-cara img{
+  width: 100%;
+  height: auto;
+}
+.text{
+  color: aliceblue;
+  grid-area: text;
+}
+
+
+
+/* aside */
+.aside{
+  background-color: black;
+  grid-area: aside;
+}
+.container-aside{
+  margin: 0 auto;
+  width: 90%;
+}
+.container-aside > p{
+  color: white;
+  text-align: center;
+}
+.container-aside p::after{
+  display: block;
+  content: "";
+  border: 0.002px solid darkmagenta;
+}
+.texto-oferta h3, .texto-oferta p{
+  margin: 0;
+  color: white;
+  font-size: .8rem;
+  padding-left: 6px;
+}
+.oferta{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.oferta-flex{
+  display: flex;
+  margin: 1.5rem 0;
+}
+
+
+/* footer */
+.footer{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,8,65,1) 100%, rgba(0,212,255,1) 100%);
+  grid-area: footer;
+}
+.container-footer{
+  width: 95%;
+  margin: 10px auto;
+  display: flex;
+}
+.container-footer img{
+  margin: .5rem;
+  min-width: 13rem;
+}
+.text-footer p{
+  color: white;
+}
+
+
+/* login */
+.login{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,8,65,1) 100%, rgba(0,212,255,1) 100%);
+  grid-area: login;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-login{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+input[type=text]{
+  margin: 3px;
+}
+form input[type="button"]{
+  display: block;
+  color: white;
+  background-color: blueviolet;
+  border: none;
+  padding: 5px 13px;
+}
+.login p{
+  color: white;
+}
+.login  label{
+  color: cadetblue;
+}
+
+
+/* media query */
+@media only screen and (max-width: 1024px) {
+  body {
+    background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,8,65,1) 100%, rgba(0,212,255,1) 100%);
+  }
+}
+@media only screen and (max-width: 768px) {
+  img{
+    width: 50%;
+    height: auto;
+  }
+  body {
+    background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,8,65,1) 100%, rgba(0,212,255,1) 100%);
+  }
+  .letra{
+    font-size: .8rem;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: 
+    "nav "
+    "section"
+    "aside"
+    "footer"
+    "login";
+  }
+}
+@media only screen and (max-width: 500px) {
+  img{
+    width: 50%;
+    height: auto;
+  }
+  .letra{
+    font-size: .8rem;
+  }
+  body {
+    background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,8,65,1) 100%, rgba(0,212,255,1) 100%);
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: 
+    "nav "
+    "section"
+    "aside"
+    "footer"
+    "login";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
