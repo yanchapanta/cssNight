@@ -1,10 +1,31 @@
+:root {
+  --blanco:#fff;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
+  color: var(--blanco);
+  background-color: #dd0b0b;
+}
+
+h2 {
   color: red;
-  font-family: "Arial";
+}
+
+.container {
+  background-color: red;
+}
+.container header nav ul {
+  font-family: sans-serif;
+}
+.container header nav ul li {
+  list-style: none;
+}
+.container header nav ul li a {
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

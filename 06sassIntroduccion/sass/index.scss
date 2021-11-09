@@ -1,9 +1,45 @@
+@use 'variable' with(
+    $principal:green,
+    $fondo:rgb(221, 11, 11)
+);
+
 $bg-primario:red;
+$bg-blanco:#fff;
+
+:root{
+    --blanco:#{$bg-blanco};
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
     $fuente:"Arial";
-    color: $bg-primario;
-    font-family: $fuente;
+    color:var(--blanco);
+    // color: variable.$principal;
+    // font-family: $fuente;
+    background-color: variable.$fondo;
 }
+h2{
+    color: $bg-primario;
+}
+.container{
+    background-color: $bg-primario;
+
+    header{
+
+        nav{
+
+            ul{
+                font-family: sans-serif;
+
+                li{
+                    list-style: none;
+                    a{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+//  comentario
