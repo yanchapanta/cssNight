@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #210020;
+  background: linear-gradient(90deg, #210020 0%, #210020 35%, #370028 100%);
+}
+
+header nav {
+  margin-top: -2rem;
+}
+header nav ul {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 0.3rem;
+}
+@media only screen and (min-width: 500px) {
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  display: flex;
+  justify-content: center;
+  color: #340027;
+  text-decoration: none;
+  background-color: #fe9900;
+  box-shadow: 0px 0px 3px #ffffff inset;
+  font-weight: 600;
+  padding: 0.2rem;
+  transition: all 0.5s;
+}
+@media only screen and (min-width: 500px) {
+  header nav ul li a {
+    padding: 0.3rem 1rem;
+  }
+}
+header nav ul li a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.icono {
+  display: inline;
+  width: 20px;
+}
+
+p, h2, h3 {
+  color: #ffffff;
+}
+
+.naranja {
+  color: #fe9900;
+}
+
+.row-ver {
+  margin: 0.5rem 0;
+  display: inline-block;
+  opacity: 0.8;
+}
+.row-ver i {
+  color: #fe9900;
+}
+.row-ver a {
+  color: #fe9900;
+  text-decoration: none;
+}
+.row-ver:hover {
+  opacity: 1;
+}
+.row-ver:hover a {
+  text-decoration: underline;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  margin-top: 1rem;
+  background-color: #000000;
+}
+@media only screen and (min-width: 800px) {
+  main {
+    grid-template-columns: 6fr 2fr;
+  }
+}
+main section {
+  padding: 0.3rem;
+  width: 100%;
+}
+@media only screen and (min-width: 800px) {
+  main section {
+    padding-left: 2rem;
+  }
+}
+main section img {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+main section div div img {
+  width: 20px;
+}
+main section h2 {
+  text-align: center;
+}
+
+.blanco i {
+  color: #ffffff;
+}
+.blanco a {
+  color: #ffffff;
+}
+
+.derecha {
+  padding-left: 0rem;
+}
+
+footer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+@media only screen and (min-width: 800px) {
+  footer {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+footer section:nth-child(1) {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+@media only screen and (min-width: 300px) {
+  footer section:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 500px) {
+  footer section:nth-child(1) {
+    grid-template-columns: auto 1fr;
+  }
+}
+footer section:nth-child(1) h3 {
+  color: #fe9900;
+}
+footer section:nth-child(1) img {
+  width: 100%;
+}
+footer section:nth-child(1) div {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+footer section:nth-child(1) div .row-ver {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0.4rem;
+}
+
+.formulario {
+  padding: 0.5rem;
+}
+.formulario h5 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+@media only screen and (min-width: 300px) {
+  .formulario h5 {
+    display: none;
+  }
+}
+.formulario form {
+  width: 100%;
+  margin: auto;
+}
+.formulario form label {
+  color: #ffffff;
+}
+.formulario form .tabla-form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,203 @@
+@import 'variable';
+@import 'mixins';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    @include bg-gradient;
+}
+header{
+    
+    nav{
+        margin-top: -2rem;
+        ul{
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-rows: repeat(6,1fr);
+            gap: .3rem;
+            @include phone(){
+                // grid-template-columns: repeat(6,1fr);
+
+            }
+            @include tablet(){
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                
+
+            }
+            li{
+               list-style-type: none;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    color:$bg_morado;
+                    text-decoration:none;
+                    background-color: $bg_naranja;
+                    box-shadow: 0px 0px 3px $bg_blanco inset;
+                    font-weight: 600;
+                    padding: .2rem;
+                    transition: all .5s;
+                    @include tablet(){
+                        padding: .3rem 1rem;
+                    }
+                    &:hover{
+                        color:$bg_blanco;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+.icono{
+    display: inline;
+    width: 20px;
+
+}
+p,h2,h3{
+    color: $bg_blanco;
+}
+.naranja{
+    color: $bg_naranja;
+}
+.row-ver{
+    margin: .5rem 0;
+    display: inline-block;
+    opacity: .8;
+    i{
+        color: $bg_naranja;
+    }
+    a{
+        color: $bg_naranja;
+        text-decoration: none;
+      
+        
+    }
+    
+    &:hover{
+        opacity: 1;
+        a{
+            text-decoration:underline  ;
+
+        }
+    }
+}
+main{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    margin-top: 1rem;
+    background-color: $bg_negro;
+    @include tablet02(){
+        grid-template-columns: 6fr 2fr;
+
+    }
+    section{
+        padding: .3rem;
+        width: 100%;
+        @include tablet02(){
+            padding-left: 2rem;
+    
+        }
+        img{
+            display: flex;
+            width: 100%;
+            margin: auto;
+        }
+        div{
+            div{
+                img{
+                    width: 20px;
+                }
+            }
+        }
+        h2{
+            text-align: center;
+        }
+
+    }
+
+}
+.blanco{
+    i{
+
+        color: $bg_blanco;
+    }
+    a{
+        color: $bg_blanco;
+
+    }
+}
+.derecha{
+    padding-left: 0rem;
+}
+footer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    
+    @include tablet02(){
+        grid-template-columns: 3fr 1fr;
+
+    }
+    section:nth-child(1){
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+        padding: .5rem;
+        @include phone(){
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        @include tablet(){
+            grid-template-columns: auto 1fr;
+        
+        }
+        h3{
+            color: $bg_naranja;
+        }
+        img{
+            width: 100%;
+        }
+        div{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+            .row-ver{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: .4rem;
+            }
+        }
+    }
+}
+.formulario{
+    padding: .5rem;
+    h5{
+        color: $bg_blanco;
+        text-align: center;
+        font-size: 1.5rem;
+        @include phone{
+            display: none;
+        }
+    }
+    form{
+        width: 100%;
+        margin: auto;
+        label{
+            color: $bg_blanco;
+        }
+        .tabla-form{
+            display: grid;
+            grid-template-rows:1fr 1fr;
+            gap: .5rem;
+        }
+    }
+}

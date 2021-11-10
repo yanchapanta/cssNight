@@ -1,0 +1,26 @@
+
+@mixin phone{
+    @media only screen and(min-width:#{$phone}){
+        @content;
+    }
+}
+@mixin tablet{
+    @media only screen and(min-width:#{$tablet}){
+        @content;
+    }
+}
+@mixin tablet02{
+    @media only screen and(min-width:#{$tablet02}){
+        @content;
+    }
+}
+@mixin desktop{
+    @media only screen and(min-width:#{$desktop}){
+    @content;
+    }
+}
+
+@mixin bg-gradient($angle: 90deg, $amount: 100%) {
+    background: rgb(33,0,32);
+background: linear-gradient($angle, rgba(33,0,32,1) 0%, rgba(33,0,32,1) 35%, rgba(55,0,40,1) $amount);
+}
