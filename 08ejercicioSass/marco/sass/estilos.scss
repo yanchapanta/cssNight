@@ -1,5 +1,7 @@
 @import 'variable';
-@import 'mixins';
+@import 'mixins'; 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -13,12 +15,13 @@ header{
     nav{
         margin-top: -2rem;
         ul{
-            width: 80%;
+            width: 90%;
             margin: auto;
             display: grid;
             grid-template-rows: repeat(6,1fr);
             gap: .3rem;
             @include phone(){
+                width: 80%;
                 // grid-template-columns: repeat(6,1fr);
 
             }
@@ -44,6 +47,10 @@ header{
                     transition: all .5s;
                     @include tablet(){
                         padding: .3rem 1rem;
+                    }
+                    @include tablet02(){
+                        padding: .3rem 1.5rem;
+
                     }
                     &:hover{
                         color:$bg_blanco;
@@ -94,7 +101,7 @@ main{
     margin-top: 1rem;
     background-color: $bg_negro;
     @include tablet02(){
-        grid-template-columns: 6fr 2fr;
+        grid-template-columns: 5fr 2fr;
 
     }
     section{
@@ -102,12 +109,20 @@ main{
         width: 100%;
         @include tablet02(){
             padding-left: 2rem;
-    
+            
+        }
+        @include tablet(){
+            padding: 1rem;
+
         }
         img{
             display: flex;
             width: 100%;
             margin: auto;
+            @include tablet(){
+                width: 80%;
+
+            }
         }
         div{
             div{
@@ -143,6 +158,7 @@ footer{
     
     @include tablet02(){
         grid-template-columns: 3fr 1fr;
+        padding: 0 2rem;
 
     }
     section:nth-child(1){
@@ -156,7 +172,11 @@ footer{
             justify-content: space-evenly;
         }
         @include tablet(){
-            grid-template-columns: auto 1fr;
+            display: flex;
+            flex-direction: row;
+        
+        }
+        @include tablet02(){
         
         }
         h3{
@@ -164,6 +184,16 @@ footer{
         }
         img{
             width: 100%;
+            @include tablet(){
+                width: 80%;
+                margin: auto;
+            
+            }
+            @include tablet02(){
+                width: 60%;
+                margin: auto;
+            
+            }
         }
         div{
             display: flex;

@@ -16,11 +16,11 @@
 }
 @mixin desktop{
     @media only screen and(min-width:#{$desktop}){
-    @content;
+        @content;
     }
 }
 
 @mixin bg-gradient($angle: 90deg, $amount: 100%) {
     background: rgb(33,0,32);
-background: linear-gradient($angle, rgba(33,0,32,1) 0%, rgba(33,0,32,1) 35%, rgba(55,0,40,1) $amount);
+    background: linear-gradient($angle, rgba(33,0,32,1) 0%, rgba(33,0,32,1) 35%, rgba(55,0,40,1) $amount);
 }
