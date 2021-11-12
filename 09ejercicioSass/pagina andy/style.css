@@ -1,0 +1,147 @@
+/* general */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body */
+body{
+  font-family: sans-serif;
+  background-color: white;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+/* container */
+.container-body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% auto 12%;
+  gap: 1rem;
+}
+
+/* header */
+.header{
+  background-color: aquamarine;
+}
+.img-fondo{
+  background-image: url(iceberg-recurso-fondo-de-comercio-bbva.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.logo-menu{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.grid-menu{
+  border: 1px;
+  /* display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2,auto);
+  padding-bottom: 1rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu ul{
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  list-style: none;
+}
+.logo{
+  margin: 1.5rem 0;
+  font-size: 2rem;
+}
+.menu ul li, .logo p{
+  text-align: center;
+  color: black;
+  padding: 3px 0;
+}
+.menu ul li{
+  background-color: beige;
+  border: 1px solid black;
+}
+
+/* section */
+.section{
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  grid-template-rows: 1fr 2.3fr;
+  /* grid-area: section; */
+  grid-template-areas: 
+  "imagen-section""
+  "grid-section";
+}
+.imagen-section img{
+  width: 100%;
+  min-width: 180px;
+  height: auto;
+}
+.titulo-section{
+  margin: 1rem 0;
+  text-align: center;
+}
+input[type="button"]{
+  margin: .9rem 0;
+  border: none;
+  border: 1px solid black;
+  padding: 6px 16px;
+  background-color: white;
+}
+.grid-imagen{
+  margin: 0 4px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  grid-template-rows: repeat(8,auto);
+  gap:.3rem;
+}
+.grid-img{
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* footer */
+.footer{
+  margin: 0;
+  background-color: black;
+  /* grid-area: footer; */
+}
+.letra-blanca{
+  color: white;
+}
+.container-footer{
+  width: 95%;
+  height: 85%;
+  margin: 10px auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  grid-template-rows: repeat(auto-fit,minmax(100px,1fr));
+}
+.menu-footer ul{
+  display: grid;
+  list-style: none;
+}
+.menu-footer ul li{
+  padding: 3px 15px;
+}
+.titulo-footer,
+.iconos-footer,
+.menu-footer,
+.copy-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconos-footer img{
+  background-color: white;
+  padding: .1rem;
+}
