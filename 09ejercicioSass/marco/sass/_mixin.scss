@@ -1,0 +1,20 @@
+@mixin phone{
+    @media only screen and (min-width:#{$phone}){
+        @content;
+    }
+}
+@mixin tablet{
+    @media only screen and(min-width:#{$tablet}){
+        @content;
+    }
+}
+@mixin tablet02{
+    @media only screen and(min-width:#{$tablet02}){
+        @content;
+    }
+}
+@mixin escritorio{
+    @media only screen and(min-width:#{$escritorio}){
+        @content;
+    }
+}
